@@ -50,7 +50,7 @@ darkModeBtn.onclick = () => {
      toogleBtn.style.right = "0%";
      toogleBtn.style.left = "";
      darkBg.innerHTML = `
-     <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1681994340/night2_j8bk6n.jpg" alt="" class="bg">
+     <video src="./assets/videos/pexels-eberhard-grossgasteiger-857251-1620x1080-25fps.mp4" class="bg" autoplay></video>
      `;
      darkBg.style.transition = "all 2s ease-in-out 5ms";
      aboutSection.style.background = "#121212";
@@ -84,7 +84,7 @@ lightModeBtn.onclick = () => {
      toogleBtn.style.left = "0%";
      toogleBtn.style.right = "";
      darkBg.innerHTML = `
-               <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665004251/samples/landscapes/nature-mountains.jpg" alt="" class="bg">
+               <video src="./assets/videos/pexels-peter-fowler-6394054-4096x2048-24fps.mp4" class="bg" autoplay></video>
      `;
      darkBg.style.transition = "all 2s ease-in-out 5ms";
      aboutSection.style.background = "#fbf8f5";
