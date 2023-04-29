@@ -114,22 +114,57 @@ color: white;
 .name{
      font-size: 4rem;
 font-family: 'Roboto Flex', sans-serif;
+text-align: center;
+margin-top: 1.5rem;
 }
 .about{
      font-family: 'Play', sans-serif;
      color: lightgray;
+     text-align: center;
 }
-.welcome{
-     font-family: 'Play', sans-serif;
-     font-size: 1.3rem;
-}
+
 .buttons{
      display: flex;
-     gap: 1rem;
-     margin-left: .5rem;
+     justify-content: center;
+     gap: 3rem;
      font-family: 'Play', sans-serif;
 margin-top: 2rem;
 }
+.num{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     justify-content: center;
+align-items: center;
+}
+.numbers{
+     font-size: 5rem;
+     text-align: center;
+}
+.num2{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+}
+
+.read-more{
+     padding: .8rem;
+     border-radius: 2rem;
+     display: block;
+     margin: 0 auto;
+     font-family: 'Play', sans-serif;
+margin-top: 0.3rem;
+font-size: 1.3rem;
+background: transparent;
+border: 2px solid white;
+color: white;
+}
+.scroll-down{
+     display: block;
+     text-align: center;
+     margin-top: 0.5rem;
+}
+
 .about-me{
      padding: .5rem;
      background: transparent;
