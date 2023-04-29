@@ -17,7 +17,7 @@ background: #000;
      width: 100%;
      z-index: 1;
 position: relative;
-opacity: 0.5;
+opacity: 0.4;
 }
 .main-head{
 padding:0 1rem ;
@@ -128,7 +128,7 @@ margin-top: 1.5rem;
      justify-content: center;
      gap: 3rem;
      font-family: 'Play', sans-serif;
-margin-top: 2rem;
+margin-top: .5rem;
 }
 .num{
      display: flex;
@@ -163,6 +163,20 @@ color: white;
      display: block;
      text-align: center;
      margin-top: 0.5rem;
+     display: flex;
+     justify-content: center;
+}
+svg.fa-chevron-down{
+     margin-top: 0.3rem;
+     display: block;
+     text-align: center;
+     color: aqua;
+     height: 1.5rem;
+     display: flex;
+     justify-content: center;
+}
+.down-arrow{
+     
 }
 
 .about-me{
