@@ -269,52 +269,30 @@ font-family: 'Roboto Flex', sans-serif;
 }
 .inno-bg{
      width: 100%;
-     position: relative;
+     position: absolute !important;
+
+}
+.inno-bg-sec{
 }
 .skill-section{
- /* background:#eeeeeb; */
- /* padding:3rem; */
- position: absolute;
- /* overflow: hidden;  */
+position: relative;
+right: 0;
+top: 0;
+/* left: 0; */
 }
 .skills-wrap{
      /* display: flex; */
      /* justify-content: space-evenly; */
 }
-.skills-wrap img{
-height: 6rem;
-width: 6rem;
-}
-.skills-wrap img:hover{
-     transform: scale(1.2);
-
-}
-.first{
-     display: flex;
-     justify-content: space-around;
-     margin-bottom: 4rem;
-     margin-top: 4rem;
-}
-.second{
-     display: flex;
-     justify-content: space-around;
-     margin-bottom: 4rem ;
-
-         
-}
-.skill{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-
-}
 .skill-head{
 font-family: 'Roboto Flex', sans-serif;
 font-weight: 900;
+margin-top: 3rem;
 }
 .skills-p{
      font-family: 'Play', sans-serif;
 color: grey;
+margin-top: 3rem;
 
 }
 .skills-wrap{
@@ -332,6 +310,7 @@ color: grey;
 .project-section{
      padding:3rem;
  background: #fbf8f5;
+ position: relative;
 
 }
 .project-head{
