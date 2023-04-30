@@ -84,7 +84,7 @@ lightModeBtn.onclick = () => {
      toogleBtn.style.left = "0%";
      toogleBtn.style.right = "";
      darkBg.innerHTML = `
-               <video src="./assets/videos/pexels-peter-fowler-6394054-4096x2048-24fps.mp4" class="bg" autoplay></video>
+               <video  src="./assets/videos/pexels-chris-galkowski-1987421-1920x1080-30fps.mp4" class="bg" autoplay></video>
      `;
      darkBg.style.transition = "all 2s ease-in-out 5ms";
      aboutSection.style.background = "#fbf8f5";
