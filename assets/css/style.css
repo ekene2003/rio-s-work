@@ -269,18 +269,19 @@ font-family: 'Roboto Flex', sans-serif;
 }
 .inno-bg{
      width: 100%;
-     position: absolute !important;
-
+     position: relative !important;
 }
 .inno-bg-sec{
 }
 .skill-section{
-position: relative;
-right: 0;
-top: 0;
+position: absolute;
+background: #000;
+z-index: 99;
 /* left: 0; */
 }
 .skills-wrap{
+z-index: 9999;
+
      /* display: flex; */
      /* justify-content: space-evenly; */
 }
@@ -293,19 +294,23 @@ margin-top: 3rem;
      font-family: 'Play', sans-serif;
 color: grey;
 margin-top: 3rem;
-
 }
-.skills-wrap{
 
+.skill-part{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 2rem;
 }
-.skill-head{
-font-family: 'Roboto Flex', sans-serif;
-
+.parts{
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
-.skill-p{
-     font-family: 'Play', sans-serif;
-color: grey;
-
+.parts svg{
+     height: 3rem;
+     margin: 2rem 0;
+     color: #fbf8f5;
 }
 .project-section{
      padding:3rem;
