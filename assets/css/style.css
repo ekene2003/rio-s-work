@@ -293,19 +293,72 @@
   }
   .project-section {
     padding: 3rem;
-    background: #fbf8f5;
+    background: #111;
   }
-  .project-head {
+  .project-head{
+    color: white;
     font-family: "Roboto Flex", sans-serif;
+
   }
-  .project-p {
-    font-family: "Play", sans-serif;
-    color: gray;
+  .water-wrap{
+    position: relative;
   }
-  .category-btn {
-    gap: 4rem;
-    margin-top: 3rem;
+  .water-img1{
+    width: 100%;
+    height: 92vh;
+    object-fit: cover;
+    opacity: .5;
   }
+  .water-img{
+    width: 100%;
+    height: 45vh;
+    margin-top: 0.4rem;
+    object-fit: cover;
+    opacity: .5;
+  }
+  .water-write-up1{
+position: absolute;
+top: 30%;
+display: block;
+margin:0 4rem;
+  }
+  .water-write-up2{
+    position: absolute;
+    top: 10%;
+    display: block;
+    margin:0 4rem;
+      }
+      .water-write-up3{
+        position: absolute;
+        top: 60%;
+        display: block;
+        margin:0 4rem;
+       }
+       .water-write-up4{
+        position: absolute;
+        top: 10%;
+        display: block;
+        margin:0 4rem;
+       }
+       .water-write-up5{
+        position: absolute;
+        top: 60%;
+        display: block;
+        margin:0 4rem;
+       }
+.water-p{
+  text-align: center;
+  color: aliceblue;
+  font-size: 2rem;
+}
+.water-part{
+  background: #111;
+  /* margin-left: .01rem; */
+}
+.read-more:hover{
+  background: grey;
+  color: white;
+}
   .project-btn {
     padding: 0.5rem;
     border-radius: 0.3rem;
