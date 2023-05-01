@@ -1,432 +1,396 @@
-*{
-     border: none;
-     list-style-type: none;
-     padding: 0;
-     margin: 0;
-     box-sizing: border-box;
-     text-decoration: none !important;
-     scroll-behavior: smooth;
-     transition: all .5s ease-in;
+* {
+  border: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  scroll-behavior: smooth;
+  transition: all 0.5s ease-in;
 }
-@media screen and (min-width:768px) {
-     body{
-     overflow-x: hidden !important;
-background: #000;
-}
-.bg{
-     width: 100%;
-     z-index: 1;
-position: relative;
-opacity: 0.4;
-}
-.main-head{
-padding:0 1rem ;
-background: transparent;
-z-index: 999;
-top: 0;
-position: absolute;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-top: .5rem;
-}
-.navbar{
+@media screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+    background: #000;
+  }
+  .bg {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    opacity: 0.4;
+  }
+  .main-head {
+    padding: 0 1rem;
+    background: transparent;
+    z-index: 999;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  .navbar {
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .brand-logo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+  .nav-icon {
+    display: none;
+  }
+  .nav-icon2 {
+    display: none;
+  }
+  .toogle {
+    padding: 0.8;
+    border: 1px solid white;
+    border-radius: 3rem;
+    height: 2rem;
+    width: 4.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .fa-sun {
+    margin-right: 1rem;
+  }
+  .circle {
+    position: absolute;
+    /* left: 0; */
+    margin-top: 0.2rem;
+  }
+  svg.fa-circle {
+    height: 1.5rem;
+    width: 2rem;
+  }
+  .fa-moon {
+    margin-left: 0.5rem;
+  }
+  .brand-head {
+    font-family: "Play", sans-serif;
+    color: white;
+    font-size: 2rem;
+  }
+  .active-page {
+    color: tomato !important;
+  }
+  ul.nav-wrap {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+    margin-right: 3rem;
+    cursor: pointer;
+    background-color: transparent !important ;
+  }
 
-}
-.brand{
-     display: flex;
-     align-items: center;
-     gap: 1rem;
-}
-.brand-logo{
-width: 4rem;
-height: 4rem;
-border-radius: 50%;
-}
-.nav-icon{
-     display: none;
-}
-.nav-icon2{
-     display: none;
-}
-.toogle{
-     padding: .8;
-     border: 1px solid white ;
-     border-radius: 3rem;
-     height: 2rem;
-     width: 4.5rem;
-     display: flex;
-     align-items: center;
-     position: relative;
-     cursor: pointer;
-}
-.fa-sun{
-margin-right: 1rem;
-}
-.circle{
-      position: absolute;
-     /* left: 0; */
-     margin-top: .2rem;
-}
-svg.fa-circle{
-     height: 1.5rem;
-     width: 2rem;
-}
-.fa-moon{
-margin-left: .5rem;
-}
-.brand-head{
-          font-family: 'Play', sans-serif;
-          color: white;
-          font-size: 2rem;
-}
-.active-page{
-     color: tomato !important;
-}
-ul.nav-wrap{
-display: flex;
-align-items: center;
-color: white;
-gap: 1rem;
-margin-right: 3rem ;
-cursor: pointer;
-background-color: transparent !important ;
-}
+  .nav-item:hover {
+    color: tomato;
+    transform: scale(1.2);
+  }
+  .nav-item {
+    font-family: "Play", sans-serif;
+    color: gray;
+    background-color: none !important;
+  }
+  .home {
+    position: absolute;
+    top: 3rem;
+    z-index: 999;
+    padding: 0 3rem;
+    color: white;
+  }
+  .name {
+    font-size: 4rem;
+    font-family: "Roboto Flex", sans-serif;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .about {
+    font-family: "Play", sans-serif;
+    color: lightgray;
+    text-align: center;
+  }
 
-.nav-item:hover{
-     color: tomato;
-     transform: scale(1.2);
-}
-.nav-item{
-     font-family: 'Play', sans-serif;
-     color: gray;
-background-color: none !important;
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-family: "Play", sans-serif;
+    margin-top: 0.5rem;
+  }
+  .num {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .numbers {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .num2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 
-}
-.home{
-position: absolute;
-top: 3rem;
-z-index: 999;
-padding: 0 3rem;
-color: white;
-}
-.name{
-     font-size: 4rem;
-font-family: 'Roboto Flex', sans-serif;
-text-align: center;
-margin-top: 1.5rem;
-}
-.about{
-     font-family: 'Play', sans-serif;
-     color: lightgray;
-     text-align: center;
-}
+  .read-more {
+    padding: 0.8rem;
+    border-radius: 2rem;
+    display: block;
+    margin: 0 auto;
+    font-family: "Play", sans-serif;
+    margin-top: 0.3rem;
+    font-size: 1.3rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  .scroll-down {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  svg.fa-chevron-down {
+    margin-top: 0.3rem;
+    color: white;
+    height: 1.9rem;
+    display: flex;
+    justify-content: center;
+  }
+  .down-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
-.buttons{
-     display: flex;
-     justify-content: center;
-     gap: 3rem;
-     font-family: 'Play', sans-serif;
-margin-top: .5rem;
-}
-.num{
-     display: flex;
-     flex-direction: column;
-     text-align: center;
-     justify-content: center;
-align-items: center;
-}
-.numbers{
-     font-size: 5rem;
-     text-align: center;
-}
-.num2{
-     display: flex;
-     flex-direction: column;
-     text-align: center;
-}
+  .about-me {
+    padding: 0.5rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 0.5rem;
+  }
+  .projects {
+    padding: 0.5rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 0.5rem;
+  }
+  .about-me:hover {
+    transform: scale(1.2);
+    color: tomato;
+  }
+  .projects:hover {
+    transform: scale(1.2);
+    color: tomato;
+  }
+  .about-section {
+    padding: 3rem 3rem;
+    background: #fbf8f5;
+    /* background: white; */
+  }
+  .container {
+  }
+  .left {
+  }
+  .bio-img {
+    width: 80%;
+    height: 80vh;
+    object-fit: cover;
+  }
+  .bio-img:hover {
+    transform: scale(1.1);
+  }
+  .right {
+  }
+  .bio-p {
+    font-family: "Play", sans-serif;
+    color: gray;
+  }
+  .about-head {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 900;
+    text-align: center;
+  }
+  .turbo {
+    font-size: 1.5rem;
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: 2rem;
+  }
+  .turbo-examples {
+    color: gray;
+    margin-top: 2rem;
+  }
 
-.read-more{
-     padding: .8rem;
-     border-radius: 2rem;
-     display: block;
-     margin: 0 auto;
-     font-family: 'Play', sans-serif;
-margin-top: 0.3rem;
-font-size: 1.3rem;
-background: transparent;
-border: 2px solid white;
-color: white;
-}
-.scroll-down{
-     display: block;
-     text-align: center;
-     margin-top: 0.5rem;
-     display: flex;
-     justify-content: center;
-     font-size: 1.5rem;
-}
-svg.fa-chevron-down{
-     margin-top: 0.3rem;
-     color: white;
-     height: 1.9rem;
-     display: flex;
-     justify-content: center;
-}
-.down-arrow{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     margin: 0 auto;
+  .inno-bg {
+    width: 100%;
+    position: relative !important;
 
-}
+  }
+  .inno-bg-sec {
+  }
+  .skill-section {
+    /* position: absolute; */
+    background: #000;
+    z-index: 99;
+    /* left: 0; */
+    bottom: 0;
+  }
+  .skills-wrap {
+    z-index: 9999;
+  }
+  .skill-head {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 900;
+    margin-top: 3rem;
+  }
+  .skills-p {
+    font-family: "Play", sans-serif;
+    color: grey;
+    margin-top: 3rem;
+  }
 
-.about-me{
-     padding: .5rem;
-     background: transparent;
-     border: 2px solid white;
-     color: white;
-     border-radius: .5rem;
-
-}
-.projects{
-     padding: .5rem;
-     background: transparent;
-     border: 2px solid white;
-     color: white;
-     border-radius: .5rem;
-}
-.about-me:hover{
-     transform: scale(1.2);
-     color: tomato;
-}
-.projects:hover{
-     transform: scale(1.2);
-     color: tomato;
-}
-.about-section{
-padding: 3rem 3rem;
- background: #fbf8f5;
- /* background: white; */
-
-}
-.container{
-
-}
-.left{
-
-}
-.bio-img{
-     width: 80%;
-     height: 80vh;
-     object-fit: cover;
-}
-.bio-img:hover{
-transform: scale(1.1);
-}
-.right{
-
-}
-.bio-p{
-     font-family: 'Play', sans-serif;
-        color: gray;
-}
-.about-head{
-font-family: 'Roboto Flex', sans-serif;
-font-weight: 900;
-text-align: center;
-}
-.turbo{
-     font-size: 1.5rem;
-font-family: 'Roboto Flex', sans-serif;
-        margin-top: 2rem;
-}
-.turbo-examples{
-     color: gray;
-     margin-top: 2rem;
-
-}
-
-.socials{
-     display: flex;
-     justify-content: space-evenly;
-     align-items: center;
-     background: #111;
-     border-radius: 3rem;
-     padding: 1rem;
-     box-shadow: 2px 2px 6px 3px gray;
-     cursor: pointer;
-
-}
-.media{
-          height: 2rem;
-     width: 1.5rem;
-     color: white;
-}
-.media:hover{
-     transform: scale(1.8);
-}
-.inno-bg{
-     width: 100%;
-     position: relative !important;
-}
-.inno-bg-sec{
-}
-.skill-section{
-position: absolute;
-background: #000;
-z-index: 99;
-/* left: 0; */
-}
-.skills-wrap{
-z-index: 9999;
-
-     /* display: flex; */
-     /* justify-content: space-evenly; */
-}
-.skill-head{
-font-family: 'Roboto Flex', sans-serif;
-font-weight: 900;
-margin-top: 3rem;
-}
-.skills-p{
-     font-family: 'Play', sans-serif;
-color: grey;
-margin-top: 3rem;
-}
-
-.skill-part{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 2rem;
-}
-.parts{
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-.parts svg{
-     height: 3rem;
-     margin: 2rem 0;
-     color: #fbf8f5;
-}
-.project-section{
-     padding:3rem;
- background: #fbf8f5;
- position: relative;
-
-}
-.project-head{
-font-family: 'Roboto Flex', sans-serif;
-
-}
-.project-p{
-     font-family: 'Play', sans-serif;
-     color: gray;
-}
-.category-btn{
-     gap: 4rem;
-margin-top: 3rem;
-}
-.project-btn{
-  padding: .5rem;
-border-radius: .3rem;
-     box-shadow: 2px 1px 4px 1px gray;
-     font-family: 'Play', sans-serif;
-color: black;
- background: transparent;
- border: 1px solid black;
-}
-.project-btn:hover{
-     transform: scale(1.3);
-}
-.active{
-background: dimgray;
-color: white;
-}
-.projects-wrap{
-
-}
-.project{
-     cursor: pointer;
-     position: relative; 
-}
-.project-img{
-width: 100%;
-height: 20vw;
-box-shadow: 2px 2px 5px 1px #111;
-margin-top: 2rem;
-/* background-color: #000; */
-}
-.modalBtn{
-background: gray;
-border: solid 1px black;
-position: absolute;
-top: 40%;
-left: 40%;
-display: none;
-}
-.project-card-tittle{
-font-family: 'Roboto Flex', sans-serif;
-margin-top: 1rem;
-}
-.project-img:hover{
-filter: blur(2.5px);
-     transform: scale(1.05);
-
-}
-.modalBtn:hover{
-background: dimgray;
-border: none;
-}
-.modalBtn:hover .project-img{
-filter: blur(2.5px) !important;
-
-}
-.project:hover .project img{
-filter: blur(2.5px) !important;
-}
-.project:hover .modalBtn{
-     display: block !important;
-}
-.modal-body img{
-width: 100%;
-}
-.location-section{
- background: #fbf8f5;
-
-}
-.location-section iframe{
-     width: 100% !important;
-}
-footer.footer {
+  .skill-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .parts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .parts svg {
+    height: 3rem;
+    margin: 2rem 0;
+    color: #fbf8f5;
+  }
+  .project-section {
+    padding: 3rem;
+    background: #fbf8f5;
+  }
+  .project-head {
+    font-family: "Roboto Flex", sans-serif;
+  }
+  .project-p {
+    font-family: "Play", sans-serif;
+    color: gray;
+  }
+  .category-btn {
+    gap: 4rem;
+    margin-top: 3rem;
+  }
+  .project-btn {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    box-shadow: 2px 1px 4px 1px gray;
+    font-family: "Play", sans-serif;
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+  }
+  .project-btn:hover {
+    transform: scale(1.3);
+  }
+  .active {
+    background: dimgray;
+    color: white;
+  }
+  .projects-wrap {
+  }
+  .project {
+    cursor: pointer;
+    position: relative;
+  }
+  .project-img {
+    width: 100%;
+    height: 20vw;
+    box-shadow: 2px 2px 5px 1px #111;
+    margin-top: 2rem;
+    /* background-color: #000; */
+  }
+  .modalBtn {
+    background: gray;
+    border: solid 1px black;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: none;
+  }
+  .project-card-tittle {
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: 1rem;
+  }
+  .project-img:hover {
+    filter: blur(2.5px);
+    transform: scale(1.05);
+  }
+  .modalBtn:hover {
+    background: dimgray;
+    border: none;
+  }
+  .modalBtn:hover .project-img {
+    filter: blur(2.5px) !important;
+  }
+  .project:hover .project img {
+    filter: blur(2.5px) !important;
+  }
+  .project:hover .modalBtn {
+    display: block !important;
+  }
+  .modal-body img {
+    width: 100%;
+  }
+  .location-section {
+    background: #fbf8f5;
+  }
+  .location-section iframe {
+    width: 100% !important;
+  }
+  footer.footer {
     padding: 7rem 4rem;
     display: flex;
     gap: 4rem;
     height: fit-content;
     width: 100%;
     position: relative;
- background: #fbf8f5;
+    background: #fbf8f5;
   }
   div.social-head h1 {
     position: absolute;
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: "Roboto Flex", sans-serif;
     font-size: 3.5rem;
     top: 5%;
-  } 
+  }
   div.social-head p {
     color: grey;
-    font-family: Source Sans Pro,sans-serif;
+    font-family: Source Sans Pro, sans-serif;
   }
-  div.small-info h4{
-font-size: 1rem;
-margin-bottom: .5rem;
+  div.small-info h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
   }
-  div.small-info p{
-margin-bottom: .5rem;
-    font-family: Source Sans Pro,sans-serif;
+  div.small-info p {
+    margin-bottom: 0.5rem;
+    font-family: Source Sans Pro, sans-serif;
   }
 
   div.social-sec {
@@ -435,7 +399,7 @@ margin-bottom: .5rem;
   }
   div.social-sec a {
     color: black;
-    font-family: Source Sans Pro,sans-serif;
+    font-family: Source Sans Pro, sans-serif;
   }
   div.social-sec h3 {
     margin-bottom: 0.7rem;
@@ -460,12 +424,12 @@ margin-bottom: .5rem;
     position: absolute;
     bottom: 4%;
     right: 2%;
-    font-family: Source Sans Pro,sans-serif;
- color: gray;
+    font-family: Source Sans Pro, sans-serif;
+    color: gray;
   }
   div.social a {
     color: black;
-    font-family: Source Sans Pro,sans-serif;
+    font-family: Source Sans Pro, sans-serif;
   }
   div.social a:hover {
     color: rgba(242, 84, 56, 0.744);
@@ -474,115 +438,113 @@ margin-bottom: .5rem;
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
-    color:black;
+    color: black;
   }
   div.social-med svg {
     margin-right: 0.5rem;
   }
-  button.scroll{
+  button.scroll {
     padding: 1rem;
     border-radius: 50%;
     /* position: fixed !important; */
     background: dimgray;
     z-index: 9999;
     position: absolute;
-    right:2%;
-  bottom: 14%;
-  cursor: pointer;
+    right: 2%;
+    bottom: 14%;
+    cursor: pointer;
   }
-  .footer-end{
+  .footer-end {
     color: grey;
-    font-family: 'Roboto Slab', serif;
-font-size: 1rem;
+    font-family: "Roboto Slab", serif;
+    font-size: 1rem;
   }
-
 }
-  @media screen and (max-width:768px) {
-     body{
-background: #000;
-overflow-x: hidden;
-}
-.bg{
-     height: 100vh !important;
-     width: 100%;
-     object-fit: cover;
-     z-index: 1;
-position: relative;
-opacity: 0.43;
-}
-.main-head{
-padding:0 1rem ;
-background: transparent;
-z-index: 99;
-top: 0;
-position: absolute;
-margin-top: 1rem;
-display: flex;
-justify-content:space-between;
-width: 100%;
-}
-.brand{
-     display: flex;
-     align-items: center;
-      gap: .5rem;
-}
-.brand-logo{
-width: 4rem;
-height: 4rem;
-border-radius: 50%;
-}
-.toogle{
-     padding: .8;
-     border: 1px solid white ;
-     border-radius: 3rem;
-     height: 2rem;
-     width: 4.5rem;
-     display: flex;
-     align-items: center;
-     position: relative;
-     margin-top: 1rem;
-     background: grey;
-}
-.fa-sun{
-margin-right: 1rem;
-color: white;
-
-}
-.circle{
-      position: absolute;
-     margin-top: .2rem;
-     color: white;
-}
-svg.fa-circle{
-     height: 1.5rem;
-     width: 2rem;
-     color: white;
-}
-.fa-moon{
-margin-left: .5rem;
-color: white;
-}
-.brand-head{
-          font-family: 'Play', sans-serif;
-          color: white;
-          font-size: 2rem;
-}
-.active-page{
-     color: tomato !important;
-}
-ul{
-display: flex;
-flex-direction: column;
-background: #fbf8f5;
-color: black !important;
-position: absolute;
-top: 120%;
-left: -100%;
-width: 100%;
-/* height: 40vh; */
-padding: 1rem;
-z-index: 99 !important;
-}
+@media screen and (max-width: 768px) {
+  body {
+    background: #000;
+    overflow-x: hidden;
+  }
+  .bg {
+    height: 100vh !important;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+    opacity: 0.43;
+  }
+  .main-head {
+    padding: 0 1rem;
+    background: transparent;
+    z-index: 99;
+    top: 0;
+    position: absolute;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .brand-logo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+  .toogle {
+    padding: 0.8;
+    border: 1px solid white;
+    border-radius: 3rem;
+    height: 2rem;
+    width: 4.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 1rem;
+    background: grey;
+  }
+  .fa-sun {
+    margin-right: 1rem;
+    color: white;
+  }
+  .circle {
+    position: absolute;
+    margin-top: 0.2rem;
+    color: white;
+  }
+  svg.fa-circle {
+    height: 1.5rem;
+    width: 2rem;
+    color: white;
+  }
+  .fa-moon {
+    margin-left: 0.5rem;
+    color: white;
+  }
+  .brand-head {
+    font-family: "Play", sans-serif;
+    color: white;
+    font-size: 2rem;
+  }
+  .active-page {
+    color: tomato !important;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    background: #fbf8f5;
+    color: black !important;
+    position: absolute;
+    top: 120%;
+    left: -100%;
+    width: 100%;
+    /* height: 40vh; */
+    padding: 1rem;
+    z-index: 99 !important;
+  }
   button.nav-icon {
     background: transparent;
     color: white;
@@ -600,279 +562,264 @@ z-index: 99 !important;
     border-radius: 50%;
     border: 2px solid white;
     background: transparent;
-    color:  white;
+    color: white;
     height: 3rem;
     width: 3rem;
-        position: absolute;
+    position: absolute;
     right: 2%;
   }
-.nav-item{
-     font-family: 'Play', sans-serif;
-     color: grey;
-     margin-top: 1rem;
-}
-.home{
-position: absolute;
-top: 5%;
-bottom: 4rem;
-z-index: 9;
-padding:3rem 1rem !important;
-color: white;
-height: 100vw;
+  .nav-item {
+    font-family: "Play", sans-serif;
+    color: grey;
+    margin-top: 1rem;
+  }
+  .home {
+    position: absolute;
+    top: 5%;
+    bottom: 4rem;
+    z-index: 9;
+    padding: 3rem 1rem !important;
+    color: white;
+    height: 100vw;
 
-background: transparent;
-}
-.name{
-     font-size: 3rem;
-font-family: 'Roboto Flex', sans-serif;
-}
-.about{
-     font-family: 'Play', sans-serif;
-     color: lightgray;
-}
-.welcome{
-     font-family: 'Play', sans-serif;
-     font-size: 1.2rem;
-}
-.buttons{
-     display: flex;
-     gap: 1rem;
-     margin-left: .5rem;
-     font-family: 'Play', sans-serif;
-margin-top: 1rem;
-margin-bottom: 2rem;
-}
-.about-me{
-     padding: .5rem;
-     background: transparent;
-     border: 2px solid white;
-     color: white;
-     border-radius: .5rem;
-}
-.projects{
-     padding: .5rem;
-     background: transparent;
-     border: 2px solid white;
-     color: white;
-     border-radius: .5rem;
-}
+    background: transparent;
+  }
+  .name {
+    font-size: 3rem;
+    font-family: "Roboto Flex", sans-serif;
+  }
+  .about {
+    font-family: "Play", sans-serif;
+    color: lightgray;
+  }
+  .welcome {
+    font-family: "Play", sans-serif;
+    font-size: 1.2rem;
+  }
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    margin-left: 0.5rem;
+    font-family: "Play", sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .about-me {
+    padding: 0.5rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 0.5rem;
+  }
+  .projects {
+    padding: 0.5rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 0.5rem;
+  }
 
-.about-section{
-padding:2rem 2rem;
- background: #fbf8f5;
- /* margin-top: 30rem; */
- /* background: white; */
-
-}
-.container{
-
-}
-.left{
-
-}
-.bio-img{
-     width: 90%;
-     border-radius:50%;
-}
-.bio-img:hover{
-transform: scale(1.1);
-}
-.right{
-
-}
-.bio-p{
-     font-family: 'Play', sans-serif;
-        color: gray;
-}
-.about-head{
-font-family: 'Roboto Flex', sans-serif;
-font-weight: 900;
-}
-.socials{
-     display: flex;
-     justify-content: space-evenly;
-     align-items: center;
-     background: #111;
-     border-radius: 3rem;
-     padding: 1rem;
-     box-shadow: 2px 2px 6px 3px gray;
-     cursor: pointer;
+  .about-section {
+    padding: 2rem 2rem;
+    background: #fbf8f5;
+    /* margin-top: 30rem; */
+    /* background: white; */
+  }
+  .container {
+  }
+  .left {
+  }
+  .bio-img {
+    width: 90%;
+    border-radius: 50%;
+  }
+  .bio-img:hover {
+    transform: scale(1.1);
+  }
+  .right {
+  }
+  .bio-p {
+    font-family: "Play", sans-serif;
+    color: gray;
+  }
+  .about-head {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 900;
+  }
+  .socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #111;
+    border-radius: 3rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 6px 3px gray;
+    cursor: pointer;
     width: 100%;
-}
-.media{
-          height: 2rem;
-     width: 1.5rem;
-     color: white;
-}
-.media:hover{
-     transform: scale(1.8);
-}
-.skill-section{
- background:#eeeeeb;
- padding:2rem;
-}
-.skills-wrap{
-     display: flex;
-     justify-content: space-evenly;
-     flex-direction: column;
-     align-items: center;
-}
-.skills-wrap img{
-height: 5rem;
-width: 5rem;
-}
+  }
+  .media {
+    height: 2rem;
+    width: 1.5rem;
+    color: white;
+  }
+  .media:hover {
+    transform: scale(1.8);
+  }
+  .skill-section {
+    background: #eeeeeb;
+    padding: 2rem;
+  }
+  .skills-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills-wrap img {
+    height: 5rem;
+    width: 5rem;
+  }
 
-.skill{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-}
-.skill-head{
-font-family: 'Roboto Flex', sans-serif;
-font-weight: 900;
-}
-.skills-p{
-     font-family: 'Play', sans-serif;
-color: grey;
-
-}
-.skills-wrap{
-margin-top: 2rem;
-}
-.skill{
-     margin-top: 1rem;
-}
-.skill-head{
-font-family: 'Roboto Flex', sans-serif;
-
-}
-.skill-p{
-     font-family: 'Play', sans-serif;
-color: grey;
-
-}
-.project-section{
-     padding:2rem;
- background: #fbf8f5;
-
-}
-.project-head{
-font-family: 'Roboto Flex', sans-serif;
-
-}
-.project-p{
-     font-family: 'Play', sans-serif;
-     color: gray;
-}
-.category-btn{
-}
-.project-btn{
-  padding: .2rem;
-border-radius: .3rem;
-     box-shadow: 2px 1px 4px 1px gray;
-     font-family: 'Play', sans-serif;
-color: black;
- background: transparent;
- border: 1px solid black;
- margin-top: 3rem !important;
-}
-.active{
-background: dimgray;
-color: white;
-}
-.projects-wrap{
-
-}
-.project{
-     cursor: pointer;
-     position: relative; 
-}
-.project-img{
-width: 100%;
-height: 70vw;
-box-shadow: 2px 2px 5px 1px #111;
-margin-top: 2rem;
-}
-.modalBtn{
-background: gray;
-border: solid 1px black;
-position: absolute;
-top: 40%;
-left: 40%;
-display: none;
-}
-.project-card-tittle{
-font-family: 'Roboto Flex', sans-serif;
-margin-top: 1rem;
-}
-.project-img:hover{
-filter: blur(2.5px);
-     transform: scale(1.05);
-
-}
-.modalBtn:hover{
-background: dimgray;
-border: none;
-}
-.modalBtn:hover .project-img{
-filter: blur(2.5px) !important;
-
-}
-.project:hover .project img{
-filter: blur(2.5px) !important;
-}
-.project:hover .modalBtn{
-     display: block !important;
-}
-.modal-body img{
-width: 100%;
-}
-.location-section{
- background: #fbf8f5;
-
-}
-.location-section iframe{
-     width: 100% !important;
-}
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill-head {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 900;
+  }
+  .skills-p {
+    font-family: "Play", sans-serif;
+    color: grey;
+  }
+  .skills-wrap {
+    margin-top: 2rem;
+  }
+  .skill {
+    margin-top: 1rem;
+  }
+  .skill-head {
+    font-family: "Roboto Flex", sans-serif;
+  }
+  .skill-p {
+    font-family: "Play", sans-serif;
+    color: grey;
+  }
+  .project-section {
+    padding: 2rem;
+    background: #fbf8f5;
+  }
+  .project-head {
+    font-family: "Roboto Flex", sans-serif;
+  }
+  .project-p {
+    font-family: "Play", sans-serif;
+    color: gray;
+  }
+  .category-btn {
+  }
+  .project-btn {
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    box-shadow: 2px 1px 4px 1px gray;
+    font-family: "Play", sans-serif;
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+    margin-top: 3rem !important;
+  }
+  .active {
+    background: dimgray;
+    color: white;
+  }
+  .projects-wrap {
+  }
+  .project {
+    cursor: pointer;
+    position: relative;
+  }
+  .project-img {
+    width: 100%;
+    height: 70vw;
+    box-shadow: 2px 2px 5px 1px #111;
+    margin-top: 2rem;
+  }
+  .modalBtn {
+    background: gray;
+    border: solid 1px black;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: none;
+  }
+  .project-card-tittle {
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: 1rem;
+  }
+  .project-img:hover {
+    filter: blur(2.5px);
+    transform: scale(1.05);
+  }
+  .modalBtn:hover {
+    background: dimgray;
+    border: none;
+  }
+  .modalBtn:hover .project-img {
+    filter: blur(2.5px) !important;
+  }
+  .project:hover .project img {
+    filter: blur(2.5px) !important;
+  }
+  .project:hover .modalBtn {
+    display: block !important;
+  }
+  .modal-body img {
+    width: 100%;
+  }
+  .location-section {
+    background: #fbf8f5;
+  }
+  .location-section iframe {
+    width: 100% !important;
+  }
   footer.footer {
     padding: 4rem 1rem;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 1.5rem;
     position: relative !important;
- background: #fbf8f5;
-    
+    background: #fbf8f5;
   }
-    div.social-head h1 {
+  div.social-head h1 {
     position: absolute;
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: "Roboto Flex", sans-serif;
     font-size: 2rem;
     margin-bottom: 2rem;
     top: 4%;
-  } 
-    div.social-head p {
+  }
+  div.social-head p {
     color: grey;
     margin-top: 1rem;
-    font-family: Source Sans Pro,sans-serif;
+    font-family: Source Sans Pro, sans-serif;
     font-size: 1rem;
   }
-    div.small-info h4{
-font-size: 1.1rem;
-margin-bottom: .2rem;
+  div.small-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
   }
-    div.small-info p{
-margin-bottom: .2rem;
-    font-family: Source Sans Pro,sans-serif;
-  }  
-  
+  div.small-info p {
+    margin-bottom: 0.2rem;
+    font-family: Source Sans Pro, sans-serif;
+  }
 
   div.social-sec {
     color: black;
   }
   div.social-sec a {
     color: black;
-        font-family: Source Sans Pro,sans-serif;
+    font-family: Source Sans Pro, sans-serif;
   }
   div.social-sec h3 {
     margin-bottom: 0.2rem;
@@ -894,12 +841,12 @@ margin-bottom: .2rem;
     position: absolute;
     bottom: 0;
     right: 1%;
-    font-family: Source Sans Pro,sans-serif;
- color: gray;
+    font-family: Source Sans Pro, sans-serif;
+    color: gray;
   }
   div.social a {
     color: black;
-      font-family: Source Sans Pro,sans-serif;
+    font-family: Source Sans Pro, sans-serif;
   }
   div.social-med {
     display: flex;
@@ -907,22 +854,22 @@ margin-bottom: .2rem;
     gap: 0.2rem;
     color: black;
   }
-    button.scroll{
+  button.scroll {
     padding: 1rem;
     border-radius: 50%;
     z-index: 9999;
     position: absolute;
-    right:2%;
-  bottom: 8%;
-  cursor: pointer;
-  color: #000;
-  background: dimgrey;
+    right: 2%;
+    bottom: 8%;
+    cursor: pointer;
+    color: #000;
+    background: dimgrey;
   }
-  .footer-end{
+  .footer-end {
     color: grey;
-    font-family: 'Roboto Slab', serif;
-  } 
-  .footer-links {
-color: black;
+    font-family: "Roboto Slab", serif;
   }
- }
+  .footer-links {
+    color: black;
+  }
+}
