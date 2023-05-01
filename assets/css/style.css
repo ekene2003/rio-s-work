@@ -241,29 +241,35 @@
 
   .inno-bg {
     width: 100%;
-    position: relative !important;
-
-  }
-  .inno-bg-sec {
+    z-index: 4;
+    opacity: 0.4;
+    height: 80vh;
+    object-fit: cover;
   }
   .skill-section {
-    /* position: absolute; */
-    background: #000;
-    z-index: 99;
-    /* left: 0; */
-    bottom: 0;
+  position: relative;
+  background: #000;
   }
   .skills-wrap {
-    z-index: 9999;
+  width: 100%;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center;
   }
   .skill-head {
     font-family: "Roboto Flex", sans-serif;
     font-weight: 900;
-    margin-top: 3rem;
+    margin-top: 5rem;
+    color: whitesmoke;
+
   }
   .skills-p {
     font-family: "Play", sans-serif;
-    color: grey;
+    color: whitesmoke;
     margin-top: 3rem;
   }
 
@@ -277,6 +283,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: whitesmoke;
+
   }
   .parts svg {
     height: 3rem;
