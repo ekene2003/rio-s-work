@@ -407,28 +407,69 @@ font-weight: 800;
 }
 .footer-text{
 color: grey;
+font-family: "Play", sans-serif;
 font-size: 1.3rem;
 }
 .footer-form{
 display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+font-family: "Play", sans-serif;
+
 }
 .email-input{
-
+padding: 1rem;
+border: 2px solid grey;
+width: 40%;
+border-radius: 3rem;
 }
 .email-btn{
-
+  width: 40%;
+  border-radius: 3rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-family: "Play", sans-serif;
+background: gray;
+color: #fbf8f5;
 }
 .socials{
-
+display: flex;
+gap: 2rem;
 }
 .media{
-
+color: gray;
+border-radius: 50%;
+padding: .5rem;
+border: 1px solid grey;
+}
+.media svg{
+  height: 1rem;
+  width: 1rem;
 }
 .end-head{
-
+text-align: center;
+margin-top: 2rem;
+}
+.footer-end-links{
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem;
+  /* justify-content: center; */
 }
 .end-links{
-
+font-family: "Play", sans-serif;
+text-align: center;
+color: grey;
+}
+.small{
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  background: gray;
+  color: white;
+  text-align: center;
 }
 }
 @media screen and (max-width: 768px) {
