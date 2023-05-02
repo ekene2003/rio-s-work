@@ -10,7 +10,7 @@
 }
 @media screen and (min-width: 768px) {
   body {
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
     background: #000;
   }
   .bg {
@@ -359,150 +359,29 @@ margin:0 4rem;
   background: grey;
   color: white;
 }
-  .project-btn {
-    padding: 0.5rem;
-    border-radius: 0.3rem;
-    box-shadow: 2px 1px 4px 1px gray;
-    font-family: "Play", sans-serif;
-    color: black;
-    background: transparent;
-    border: 1px solid black;
-  }
-  .project-btn:hover {
-    transform: scale(1.3);
-  }
-  .active {
-    background: dimgray;
-    color: white;
-  }
-  .projects-wrap {
-  }
-  .project {
-    cursor: pointer;
-    position: relative;
-  }
-  .project-img {
-    width: 100%;
-    height: 20vw;
-    box-shadow: 2px 2px 5px 1px #111;
-    margin-top: 2rem;
-    /* background-color: #000; */
-  }
-  .modalBtn {
-    background: gray;
-    border: solid 1px black;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    display: none;
-  }
-  .project-card-tittle {
-    font-family: "Roboto Flex", sans-serif;
-    margin-top: 1rem;
-  }
-  .project-img:hover {
-    filter: blur(2.5px);
-    transform: scale(1.05);
-  }
-  .modalBtn:hover {
-    background: dimgray;
-    border: none;
-  }
-  .modalBtn:hover .project-img {
-    filter: blur(2.5px) !important;
-  }
-  .project:hover .project img {
-    filter: blur(2.5px) !important;
-  }
-  .project:hover .modalBtn {
-    display: block !important;
-  }
-  .modal-body img {
-    width: 100%;
-  }
+.press{
+  padding: 3rem 0;
+  position: relative;
+  /* display: flex !important; */
+}
+.card-wrap{
+  display: flex;
+
+}
+.card img{
+  height: 40vh;
+  object-fit: cover;
+}
+.card{
+  width: 100%;
+  height: 70vh;
+  margin-top: 2rem;
+}
   .location-section {
     background: #fbf8f5;
   }
   .location-section iframe {
     width: 100% !important;
-  }
-  footer.footer {
-    padding: 7rem 4rem;
-    display: flex;
-    gap: 4rem;
-    height: fit-content;
-    width: 100%;
-    position: relative;
-    background: #fbf8f5;
-  }
-  div.social-head h1 {
-    position: absolute;
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 3.5rem;
-    top: 5%;
-  }
-  div.social-head p {
-    color: grey;
-    font-family: Source Sans Pro, sans-serif;
-  }
-  div.small-info h4 {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
-  div.small-info p {
-    margin-bottom: 0.5rem;
-    font-family: Source Sans Pro, sans-serif;
-  }
-
-  div.social-sec {
-    color: black;
-    margin-left: 2rem;
-  }
-  div.social-sec a {
-    color: black;
-    font-family: Source Sans Pro, sans-serif;
-  }
-  div.social-sec h3 {
-    margin-bottom: 0.7rem;
-  }
-  div.social-sec a:hover {
-    color: tomato;
-  }
-  div.contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-    margin-right: 5rem;
-  }
-
-  div.social {
-    color: black;
-  }
-  div.social h3 {
-    margin-bottom: 0.7rem;
-  }
-  div.social small {
-    position: absolute;
-    bottom: 4%;
-    right: 2%;
-    font-family: Source Sans Pro, sans-serif;
-    color: gray;
-  }
-  div.social a {
-    color: black;
-    font-family: Source Sans Pro, sans-serif;
-  }
-  div.social a:hover {
-    color: rgba(242, 84, 56, 0.744);
-  }
-  div.social-med {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-    color: black;
-  }
-  div.social-med svg {
-    margin-right: 0.5rem;
   }
   button.scroll {
     padding: 1rem;
