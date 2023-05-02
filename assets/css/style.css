@@ -298,7 +298,6 @@
   .project-head{
     color: white;
     font-family: "Roboto Flex", sans-serif;
-
   }
   .water-wrap{
     position: relative;
@@ -394,11 +393,43 @@ margin:0 4rem;
     bottom: 14%;
     cursor: pointer;
   }
-  .footer-end {
-    color: grey;
-    font-family: "Roboto Slab", serif;
-    font-size: 1rem;
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fbf8f5;
+    padding: 1rem 0;
   }
+.footer-head{
+  font-family: "Roboto Flex", sans-serif;
+font-size: 4rem;
+font-weight: 800;
+}
+.footer-text{
+color: grey;
+font-size: 1.3rem;
+}
+.footer-form{
+display: flex;
+}
+.email-input{
+
+}
+.email-btn{
+
+}
+.socials{
+
+}
+.media{
+
+}
+.end-head{
+
+}
+.end-links{
+
+}
 }
 @media screen and (max-width: 768px) {
   body {
