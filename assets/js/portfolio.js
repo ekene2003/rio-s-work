@@ -22,11 +22,12 @@ let projectBtn = multielem(".project-btn");
 let footerLinks = multielem(".footer-links");
 let navLinks = multielem(".nav-item");
 let socials = singleelem(".socials");
-let footerHead = singleelem(".get-in-touch");
+let footerHead = singleelem(".footer-head");
+let footerEnd = multielem(".end-head");
 let scrollBtn = singleelem(".scroll");
-          let projectCards = multielem(".project");
-          let modal = multielem(".modal-content");
-          let projectTittle = multielem(".project-card-tittle");
+let projectCards = multielem(".project");
+let modal = multielem(".modal-content");
+let projectTittle = multielem(".project-card-tittle");
 openBtn.onclick = () => {
      openBtn.style.display = "none";
      nav.style.left = "0";
@@ -56,12 +57,14 @@ darkModeBtn.onclick = () => {
      aboutSection.style.background = "#121212";
      projectSection.style.background = "#121212";
      footer.style.background = "#121212";
-     skillSection.style.background = "lightgrey";
-     socials.style.boxShadow = "none"; 
-     socials.style.background = "black";
+     skillSection.style.background = "black";
      aboutHead.style.color = "white";
      projectHead.style.color = "white";
      footerHead.style.color = "white";
+       footerEnd.forEach(elem => {
+     elem.style.color = "white";
+           
+       });
      footerLinks.forEach(link => {
      link.style.color = "white";
      });
@@ -84,11 +87,9 @@ lightModeBtn.onclick = () => {
      `;
      darkBg.style.transition = "all 2s ease-in-out 5ms";
      aboutSection.style.background = "#fbf8f5";
-     projectSection.style.background = "#fbf8f5";
+     projectSection.style.background = "#111";
      footer.style.background = "#fbf8f5";
-     skillSection.style.background = "#eeeeeb";
-     socials.style.boxShadow = "2px 2px 6px 3px gray"; 
-     socials.style.background = "black"; 
+     skillSection.style.background = "black";
      projectBtn.forEach(btn => {
           btn.style.color = "black"; 
           btn.style.boxShadow = "2px 1px 4px 1px grey"
@@ -97,6 +98,10 @@ lightModeBtn.onclick = () => {
      aboutHead.style.color = "black";
      projectHead.style.color = "black";
      footerHead.style.color = "black";
+     footerEnd.forEach(elem => {
+          elem.style.color = "black";
+                
+            });
      footerLinks.forEach(link => {
      link.style.color = "black";
      });

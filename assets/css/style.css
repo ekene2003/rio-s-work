@@ -453,6 +453,8 @@ border: 1px solid grey;
 .end-head{
 text-align: center;
 margin-top: 2rem;
+font-family: "Roboto Flex", sans-serif;
+
 }
 .footer-end-links{
   display: flex;
