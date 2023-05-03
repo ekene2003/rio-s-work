@@ -477,7 +477,7 @@
     overflow-x: hidden;
   }
   .bg {
-    height: 100vh !important;
+    height: 120vh!important;
     width: 100%;
     object-fit: cover;
     z-index: 1;
@@ -676,7 +676,7 @@
     border-radius: 0.5rem;
   }
   .about-section {
-    padding: 3rem 3rem;
+    padding: 3rem 1rem;
     background: #fbf8f5;
     /* background: white; */
   }
@@ -686,7 +686,7 @@
   }
   .bio-img {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     object-fit: cover;
   }
   .bio-img:hover {
@@ -733,6 +733,8 @@
     flex-direction: column;
     align-items: center !important;
     justify-content: center;
+    padding: 0 1rem;
+
   }
   .skill-head {
     font-family: "Roboto Flex", sans-serif;
@@ -743,7 +745,7 @@
   .skills-p {
     font-family: "Play", sans-serif;
     color: whitesmoke;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .skill-part {
@@ -764,7 +766,7 @@
     color: #fbf8f5;
   }
   .project-section {
-    padding: 3rem;
+    padding: 1rem 1rem;
     background: #111;
   }
   .project-head {
@@ -776,44 +778,44 @@
   }
   .water-img1 {
     width: 100%;
-    height: 92vh;
+    height: 52vh;
     object-fit: cover;
     opacity: 0.5;
   }
   .water-img {
     width: 100%;
     height: 45vh;
-    margin-top: 0.4rem;
+    margin-top: 1rem;
     object-fit: cover;
     opacity: 0.5;
   }
   .water-write-up1 {
     position: absolute;
-    top: 30%;
+    top: 10%;
     display: block;
     margin: 0 2rem;
   }
   .water-write-up2 {
     position: absolute;
-    top: 10%;
+    top: 30%;
     display: block;
     margin: 0 2rem;
   }
   .water-write-up3 {
     position: absolute;
-    top: 60%;
+    top: 50%;
     display: block;
     margin: 0 2rem;
   }
   .water-write-up4 {
     position: absolute;
-    top: 10%;
+    top: 70%;
     display: block;
     margin: 0 4rem;
   }
   .water-write-up5 {
     position: absolute;
-    top: 60%;
+    top: 90%;
     display: block;
     margin: 0 4rem;
   }
@@ -831,7 +833,7 @@
     color: white;
   }
   .press {
-    padding: 3rem 0;
+    padding: 3rem 1rem;
     position: relative;
     background-color: grey;
     /* display: flex !important; */
@@ -845,7 +847,7 @@
   }
   .card {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     margin-top: 2rem;
     box-shadow: 2px 2px 1px 2px #111;
   }
@@ -894,11 +896,11 @@
   .email-input {
     padding: 1rem;
     border: 2px solid grey;
-    width: 40%;
+    width: 90%;
     border-radius: 3rem;
   }
   .email-btn {
-    width: 40%;
+    width: 90%;
     border-radius: 3rem;
     margin: 1rem 0;
     padding: 1rem;
