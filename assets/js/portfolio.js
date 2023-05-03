@@ -58,11 +58,7 @@ darkModeBtn.onclick = () => {
      footer.style.background = "#121212";
      skillSection.style.background = "lightgrey";
      socials.style.boxShadow = "none"; 
-     socials.style.background = "black"; 
-     projectBtn.forEach(btn => {
-          btn.style.color = "white"; 
-          btn.style.boxShadow = "2px 1px 4px 1px black"
-     });
+     socials.style.background = "black";
      aboutHead.style.color = "white";
      projectHead.style.color = "white";
      footerHead.style.color = "white";
