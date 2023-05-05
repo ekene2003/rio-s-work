@@ -858,7 +858,7 @@
   }
   .card {
     width: 100%;
-    height: 45vw;
+    height: 40vw;
     margin-top: 2rem;
     box-shadow: 2px 2px 1px 2px #111;
   }
@@ -907,11 +907,11 @@
   .email-input {
     padding: 1rem;
     border: 2px solid grey;
-    width: 40%;
+    width: 50%;
     border-radius: 3rem;
   }
   .email-btn {
-    width: 40%;
+    width: 50%;
     border-radius: 3rem;
     margin: 1rem 0;
     padding: 1rem;
@@ -1419,13 +1419,13 @@
   }
 }
 /* for phones */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body {
     background: #000;
     overflow-x: hidden;
   }
   .bg {
-    height: 120vh!important;
+    height: 55rem!important;
     width: 100%;
     object-fit: cover;
     z-index: 1;
@@ -1502,7 +1502,7 @@
     width: 100%;
     /* height: 40vh; */
     padding: 1rem;
-    z-index: 99 !important;
+    z-index: 999!important;
   }
   button.nav-icon {
     background: transparent;
@@ -1534,16 +1534,17 @@
   }
   .home {
     position: absolute;
-    top: 2rem;
-    z-index: 999;
+    top: 4rem;
+    z-index: 9;
     padding: 0 1rem;
     color: white;
+    width: 100%;
   }
   .name {
     font-size: 3rem;
     font-family: "Roboto Flex", sans-serif;
-    text-align: center;
-    margin-top: 1.5rem;
+    text-align: center !important;
+    margin-top: 2rem;
   }
   .about {
     font-family: "Play", sans-serif;
@@ -1665,7 +1666,7 @@
     width: 100%;
     z-index: 4;
     opacity: 0.4;
-    height: 80vh;
+    height:40rem;
     object-fit: cover;
   }
   .skill-section {
@@ -1681,7 +1682,7 @@
     flex-direction: column;
     align-items: center !important;
     justify-content: center;
-    padding: 0 1rem;
+    padding: 0 .5rem;
 
   }
   .skill-head {
@@ -1689,18 +1690,21 @@
     font-weight: 900;
     margin-top: 2rem;
     color: whitesmoke;
+    text-align: center;
   }
   .skills-p {
     font-family: "Play", sans-serif;
     color: whitesmoke;
     margin-top: 2rem;
+    text-align: center;
   }
 
   .skill-part {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    /* gap: 1rem; */
   }
   .parts {
     display: flex;
@@ -1710,7 +1714,7 @@
   }
   .parts svg {
     height: 3rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
     color: #fbf8f5;
   }
   .project-section {
