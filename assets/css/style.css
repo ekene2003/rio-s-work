@@ -717,7 +717,7 @@
     width: 100%;
     z-index: 4;
     opacity: 0.4;
-    height: 80vh;
+    height: 80vw;
     object-fit: cover;
   }
   .skill-section {
