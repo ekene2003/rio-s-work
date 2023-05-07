@@ -22,6 +22,7 @@ let projectBtn = multielem(".project-btn");
 let footerLinks = multielem(".footer-links");
 let navLinks = multielem(".nav-item");
 let socials = singleelem(".socials");
+let turboP = singleelem(".turbo");
 let footerHead = singleelem(".footer-head");
 let footerEnd = multielem(".end-head");
 let scrollBtn = singleelem(".scroll");
@@ -65,6 +66,7 @@ darkModeBtn.onclick = () => {
      elem.style.color = "white";
            
        });
+       turboP.style.color = "white";
      footerLinks.forEach(link => {
      link.style.color = "white";
      });
@@ -96,7 +98,6 @@ lightModeBtn.onclick = () => {
           
      });
      aboutHead.style.color = "black";
-     projectHead.style.color = "black";
      footerHead.style.color = "black";
      footerEnd.forEach(elem => {
           elem.style.color = "black";
@@ -115,6 +116,9 @@ lightModeBtn.onclick = () => {
      projectTittle.forEach(tittle => {
           tittle.style.color = "black";
      });
+     turboP.style.color = "grey";
+     projectHead.style.color = "white";
+ 
 }
 window.onscroll = () => {
      if (scrollY>450) {
