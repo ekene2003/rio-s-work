@@ -151,15 +151,33 @@
     background: #111;
   }
   .first-cards {
-    background-image: url("../images/pexels-pixabay-532192.jpg");
+    background-image: url("../images/home-grid-activated-sludge.jpg");
     background-size: cover;
-    background-color: #525151;
+    background-color: rgb(85, 85, 85);
     background-blend-mode: overlay;
   }
   .sec-cards {
-    background-image: url("../images/pexels-enrique-10785841.jpg");
+    background-image: url("../images/home-grid-membrane-bioreactor.jpg");
     background-size: cover;
-    background-color: #525151;
+    background-color: rgb(85, 85, 85);
+    background-blend-mode: overlay;
+  }
+  .third-cards {
+    background-image: url("../images/home-grid-demon-process.jpg");
+    background-size: cover;
+    background-color: rgb(85, 85, 85);
+    background-blend-mode: overlay;
+  }
+  .fourth-cards {
+    background-image: url("../images/home-grid-sequencing-batch.jpg");
+    background-size: cover;
+    background-color: rgb(85, 85, 85);
+    background-blend-mode: overlay;
+  }
+  .fifth-cards {
+    background-image: url("../images/home-grid-aerobic-digesters.jpg");
+    background-size: cover;
+    background-color: rgb(85, 85, 85);
     background-blend-mode: overlay;
   }
   .sludge-btn a {
