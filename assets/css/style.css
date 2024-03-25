@@ -170,6 +170,14 @@
     border: 1px solid white;
   }
 
+  .turbo {
+    background-color: rgb(14, 14, 148);
+    color: white;
+  }
+  .turbo img {
+    border-radius: 50%;
+    border: 3px solid white;
+  }
   .press {
     padding: 1rem 0;
     background-color: #fbf8f5;
