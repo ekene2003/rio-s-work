@@ -12,6 +12,9 @@
 .grey {
   color: grey;
 }
+.blue {
+  color: blue;
+}
 .about-btn {
   border: 1px solid blue;
   background-color: white;
@@ -19,6 +22,9 @@
 .about-btn a {
   text-decoration: none;
   color: blue;
+}
+.card-text {
+  color: red !important;
 }
 @media screen and (min-width: 768px) {
   body {
@@ -196,17 +202,10 @@
     border-radius: 50%;
     border: 3px solid white;
   }
-  .press {
-    padding: 1rem 0;
-    background-color: #fbf8f5;
-    background-image: url("../images/pexels-enrique-10785841.jpg");
-    background-size: cover;
-    background-color: rgb(62, 62, 62);
-    background-blend-mode: overlay;
-    /* display: flex !important; */
-  }
+
   .card-wrap {
-    display: flex;
+    display: flex !important;
+    justify-content: space-evenly;
   }
   .card img {
     height: 35vh;
@@ -222,6 +221,12 @@
   .location-section iframe {
     width: 100% !important;
   }
+  .press {
+    background-image: url("../images/pexels-enrique-10785841.jpg");
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgb(70, 70, 70);
+  }
 
   .footer {
     display: flex;
@@ -230,10 +235,11 @@
     background: #fbf8f5;
     padding: 1rem 0;
   }
-
+  .footer-h {
+    color: rgb(14, 14, 148);
+  }
   .footer-text {
     color: grey;
-
     font-size: 1.3rem;
   }
   .footer-form {
@@ -255,8 +261,7 @@
     border-radius: 3rem;
     margin: 1rem 0;
     padding: 1rem;
-    font-family: "Play", sans-serif;
-    background: gray;
+    background-color: rgb(14, 14, 148);
     color: #fbf8f5;
   }
   .socials {
@@ -293,7 +298,7 @@
     display: block;
     padding: 1rem;
     width: 100%;
-    background: gray;
+    background-color: rgb(14, 14, 148);
     color: white;
     text-align: center;
   }
@@ -443,6 +448,24 @@
     background-color: #525151;
     background-blend-mode: overlay;
   }
+  .third-cards {
+    background-image: url("../images/home-grid-demon-process.jpg");
+    background-size: cover;
+    background-color: rgb(85, 85, 85);
+    background-blend-mode: overlay;
+  }
+  .fourth-cards {
+    background-image: url("../images/home-grid-sequencing-batch.jpg");
+    background-size: cover;
+    background-color: rgb(85, 85, 85);
+    background-blend-mode: overlay;
+  }
+  .fifth-cards {
+    background-image: url("../images/home-grid-aerobic-digesters.jpg");
+    background-size: cover;
+    background-color: rgb(85, 85, 85);
+    background-blend-mode: overlay;
+  }
   .sludge-btn a {
     color: white !important;
   }
@@ -450,22 +473,35 @@
     background-color: transparent;
     border: 1px solid white;
   }
+  .turbo {
+    background-color: rgb(14, 14, 148);
+    color: white;
+  }
+  .turbo img {
+    border-radius: 50%;
+    border: 3px solid white;
+  }
 
-  .press {
-    padding: 1rem 0;
-    background-color: #fbf8f5;
-    /* display: flex !important; */
-  }
   .card-wrap {
-    display: flex;
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
   }
+  .card {
+    margin-bottom: 1rem;
+  }
+  .press {
+    background-color: rgb(14, 14, 148);
+  }
+
   .card img {
     height: 35vh;
     object-fit: cover;
   }
   .card {
     width: 100%;
-    height: 40vh;
+    height: 55vh !important;
   }
   .location-section {
     background: #fbf8f5;
@@ -480,6 +516,9 @@
     align-items: center;
     background: #fbf8f5;
     padding: 1rem 0;
+  }
+  .footer-h {
+    color: rgb(14, 14, 148);
   }
 
   .footer-text {
@@ -507,7 +546,7 @@
     margin: 1rem 0;
     padding: 1rem;
     font-family: "Play", sans-serif;
-    background: gray;
+    background-color: rgb(14, 14, 148);
     color: #fbf8f5;
   }
   .socials {
@@ -544,7 +583,7 @@
     display: block;
     padding: 1rem;
     width: 100%;
-    background: gray;
+    background-color: rgb(14, 14, 148);
     color: white;
     text-align: center;
   }
