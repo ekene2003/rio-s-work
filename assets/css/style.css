@@ -199,6 +199,10 @@
   .press {
     padding: 1rem 0;
     background-color: #fbf8f5;
+    background-image: url("../images/pexels-enrique-10785841.jpg");
+    background-size: cover;
+    background-color: rgb(62, 62, 62);
+    background-blend-mode: overlay;
     /* display: flex !important; */
   }
   .card-wrap {
