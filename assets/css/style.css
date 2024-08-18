@@ -41,21 +41,21 @@
     color: white !important;
   }
   .first-slide {
-    background-image: url("../images/pexels-pixabay-532192.jpg");
+    background-image: url("../images/power-plant.jpg");
     background-size: cover;
     background-position: center;
     background-color: rgb(63, 58, 58);
     background-blend-mode: overlay;
   }
   .second-slide {
-    background-image: url("../images/pexels-enrique-10785841.jpg");
+    background-image: url("../images/power-station.jpg");
     background-size: cover;
     background-position: center;
     background-color: rgb(63, 58, 58);
     background-blend-mode: overlay;
   }
   .third-slide {
-    background-image: url("../images/pexels-sam-forson-243138.jpg");
+    background-image: url("../images/pexels-enrique-10785841.jpg");
     background-size: cover;
     background-position: center;
     background-color: rgb(63, 58, 58);
@@ -157,13 +157,13 @@
     background: #111;
   }
   .first-cards {
-    background-image: url("../images/home-grid-activated-sludge.jpg");
+    background-image: url("../images/Activated-Sludge_1.jpeg");
     background-size: cover;
     background-color: rgb(85, 85, 85);
     background-blend-mode: overlay;
   }
   .sec-cards {
-    background-image: url("../images/home-grid-membrane-bioreactor.jpg");
+    background-image: url("../images/Activated-Sludge_2.jpeg");
     background-size: cover;
     background-color: rgb(85, 85, 85);
     background-blend-mode: overlay;
